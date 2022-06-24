@@ -7,7 +7,16 @@
 
 2. Asennettu Windowsin ominaisuus "Active Directory"
 
-'''shell
+```shell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-'''
+```
 
+```
+Get-NetIPAddress
+```
+
+# Työaseman liittäminen toimialueeseen
+
+'''
+Add-Computer -DomainName wtf.com -Credential wtf\Administrator -Force -Restart
+'''
